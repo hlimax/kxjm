@@ -1,0 +1,178 @@
+/*css 默认样式*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 80px;
+    background-color: #00CC99
+}
+
+.top-word {
+    text-align: center;
+    line-height: 80px;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0.5em;
+}
+
+
+/*banner区*/
+
+.banner-wrap {
+    float: left;
+    position: relative;
+    
+
+    width: 100%;
+    overflow: hidden;
+    height: 800px;
+}
+
+.banner-wrap .banner {
+    position: relative;
+
+
+    width: 100%;
+    height: 800px;
+}
+
+.banner-wrap .banner ul {
+    width: 500%;
+    position: relative;
+    left: -100%;
+    height: 800px;
+}
+
+.banner-wrap .banner li {
+    width: 20%;
+    list-style: outside none none;
+}
+
+.banner-wrap .banner ul li {
+    float: left;
+}
+
+.banner-wrap .banner-img {
+    height: 800px;
+    width: 100%;
+}
+
+.banner-wrap .banner-arrow {
+    position: absolute;
+    top: 340px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%;
+    cursor: pointer;
+}
+
+.banner-wrap .banner-arrow:hover {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+}
+
+#prev {
+    left: 0px;
+}
+
+#next {
+    right: 0px;
+}
+
+.banner .dots {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    text-align: center;
+}
+
+.banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0px 4px;
+    text-indent: -999em;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: background 0.5s ease 0s, opacity 0.5s ease 0s;
+}
+
+.banner .dots li.active {
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    opacity: 1;
+}
